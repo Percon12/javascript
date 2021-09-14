@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body{
+            background-color: rgba(19, 19, 19, 0.966);
+            color: coral;
+            font: normal 30pt Arial; 
+        }
+    </style>
+</head>
+    <body>
+        <h1>Fazendo algumas contas...</h1>
+        <script>
+            var n1 = Number(window.prompt('Digite um número: '))
+            var n2 = Number(window.prompt('Digite outro numero: '))
+            var soma = n1 + n2;
+            var sub = n1 - n2;
+            var mult = n1 * n2;
+            var div
+            var sqr = Math.sqrt(n1)
+                
+            document.write(`A <strong>soma</strong> entre ${n1} e ${n2} é ${soma}</br>`)
+            document.write(`A <strong>subtração</strong> entre ${n1} e ${n2} é ${sub}</br>`)
+            document.write(`A <strong>multiplicação</strong> entre ${n1} e ${n2} é ${mult}</br>`)
+            if (n2 > 0) {
+                    div = n1 / n2;
+                    document.write(`A <strong>divisão</strong> entre ${n1} e ${n2} é ${div}</br>`)
+                } 
+                else{
+                    document.write('Não é possivel dividir por 0</br>')
+                }
+            document.write(`A <strong>raiz quadrada</strong> de ${n1} é ${sqr}`)
+        </script>
+    </body>
+</html>
